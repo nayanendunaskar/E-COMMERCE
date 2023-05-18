@@ -49,6 +49,7 @@ img {
 
   .intro-data {
     margin-bottom: 0;
+    color: #272524;
   }
 }
 
@@ -66,7 +67,7 @@ figure {
     content: "";
     width: 60%;
     height: 80%;
-    background-color: rgba(81, 56, 238, 0.4);
+    background-color: #e0c358;
     position: absolute;
     left: 50%;
     top: -5rem;
@@ -90,7 +91,7 @@ figure {
     left: 0;
     top: 10%;
     /* bottom: 10%; */
-    background-color: rgba(81, 56, 238, 0.4);
+    background-color: #e0c358;
   }
 }`;
 

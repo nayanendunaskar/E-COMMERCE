@@ -89,8 +89,8 @@ ${"" /* resuable code section  */}
 }
 
 .grid {
-  display: grid;
-  gap: 9rem;
+  display: grid ;
+  gap: 9.5rem;
 }
 
 .grid-two-column {

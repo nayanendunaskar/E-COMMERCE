@@ -19,11 +19,11 @@ const App = () => {
 
     colors: {
 
-      bg: "#F6F8FA",
+      bg: "#fafaf6",
 
-      footer_bg: "0a1435",
+      footer_bg: "#e0c358",
 
-      btn: "rgb(98 84 243)",
+      btn: "rgb( 60 600)",
 
       border: "rgba(98, 84, 243, 0.5)",
 
