@@ -1,8 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components';
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
-import { Button } from '../styles/Button';
 
 const Footer = () => {
     return (
@@ -16,6 +14,7 @@ const Footer = () => {
                 <h3>Gear Store</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
               </div>
+
               <div className="footer-subscribe">
                 <h3>Subscribe to get more updates</h3>
                 <form action="#">
@@ -24,31 +23,36 @@ const Footer = () => {
                   <input type="submit" value="subscribe" />
                 </form>
               </div>
+
               <div className="footer-social">
                 <h3>Follow Us</h3>
                 <div className="footer-social--icons">
                   <div>
                     <FaLinkedin className="icons" />
                   </div>
+
                   <div>
                     <FaTwitter className="icons" />
                   </div>
+
                   <div>
                     <a
-                      href=""
+                      href="https://github.com/nayanendunaskar"
                       target="_blank">
                       <FaGithub className="icons" />
                     </a>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div className="footer-contact">
                 <h3>Call Us</h3>
                 <h3>+91 5432109771</h3>
               </div>
-            </div>
+            
   
-            <div className="footer-bottom--section">
+            < div className="footer-bottom--section">
               <hr />
               <div className="container grid grid-two-column ">
                 <p>
@@ -59,7 +63,7 @@ const Footer = () => {
                   <p>TERMS & CONDITIONS</p>
                 </div>
               </div>
-            </div>
+              </div>
           </footer>
         </Wrapper>
       </>
@@ -71,39 +75,24 @@ const Wrapper = styled.section`
     margin: 0;
   }
 
-  .contact-short {
-    max-width: 60vw;
-    margin: auto;
-    padding: 5rem 10rem;
-    background-color: ${({ theme }) => theme.colors.bg};
-    border-radius: 1rem;
-    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
-    transform: translateY(50%);
-
-    .grid div:last-child {
-      justify-self: end;
-      align-self: center;
-    }
-  }
 
   footer {
     padding: 14rem 0 9rem 0;
     background-color: ${({ theme }) => theme.colors.footer_bg};
     h3 {
-      color: ${({ theme }) => theme.colors.hr};
-      margin-bottom: 2.4rem;
+      color: #000000;
+      margin-bottom: 2rem;
     }
     p {
       color: ${({ theme }) => theme.colors.white};
     }
     .footer-social--icons {
       display: flex;
-      gap: 2rem;
+      gap: 2.3rem;
 
       div {
         padding: 1rem;
         border-radius: 50%;
-        border: 2px solid ${({ theme }) => theme.colors.white};
 
         .icons {
           color: ${({ theme }) => theme.colors.white};
@@ -125,17 +114,6 @@ const Wrapper = styled.section`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .contact-short {
-      max-width: 80vw;
-      margin: 4.8rem auto;
-      transform: translateY(0%);
-      text-align: center;
-
-      .grid div:last-child {
-        justify-self: center;
-      }
-    }
 
     footer {
       padding: 9rem 0 9rem 0;
