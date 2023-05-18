@@ -5,7 +5,6 @@ import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import {CiHome} from "react-icons/ci";
 import {CiUser} from "react-icons/ci";
-import {CiPhone} from "react-icons/ci";
 import {CiMenuBurger, CiMinimize1 } from "react-icons/ci";
 
 
@@ -206,12 +205,7 @@ const Nav = () => {
                     <NavLink to= "/product" className="navbar-link"
                     onClick={() => setMenuIcon(false)}>Product</NavLink>
                 </li>
-                <li>
-                    <NavLink to= "/contact" className="navbar-link"
-                    onClick={() => setMenuIcon(false)}>
-                        <CiPhone className="contact-me"/>
-                    </NavLink>
-                </li>
+                
                 <li>
                     <NavLink to= "/userprofile" className="navbar-link"
                     onClick={() => setMenuIcon(false)}>

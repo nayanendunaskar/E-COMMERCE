@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Home";
 import Product from "./Product";
-import Contact from "./contact";
 import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
 import WishList from "./WishList";
@@ -11,6 +10,7 @@ import UserProfile from "./UserProfile";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -59,13 +59,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/singleproduct/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/userprofile" element={<UserProfile />} />
       </Routes>
+      <Footer/>
     </Router>
     </ThemeProvider>
   );
