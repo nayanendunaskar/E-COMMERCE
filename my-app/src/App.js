@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Home";
-import About from "./About";
 import Product from "./Product";
 import Contact from "./contact";
 import SingleProduct from "./SingleProduct";
@@ -59,7 +58,6 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/singleproduct/:id" element={<SingleProduct />} />
